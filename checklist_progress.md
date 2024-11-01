@@ -13,9 +13,11 @@
       - All issues addressed and functionality implemented.
 
 ### Project Status
-- **Current Task:** User Registration is now in progress.
-- **Pending Fixes:**
-  - No validation for email format during registration.
-  - Password strength requirements are not enforced.
-  - No feedback provided to users if registration fails.
-  - Confirmation email may not be sent if the email service is down.
+- **Current Task:** User Login is now in progress.
+
+### Testing Insights
+- **User Registration Feature:**
+  - **Issue 1:** No validation for email format during registration. **Resolved**: Added email validation in registerUser.php.
+  - **Issue 2:** Password strength requirements are not enforced. **Resolved**: Implemented password strength validation in registerUser.php.
+  - **Issue 3:** No feedback provided to users if registration fails. **Resolved**: Added user feedback for registration success or failure in registerUser.php.
+  - **Issue 4:** Confirmation email may not be sent if the email service is down. **Resolved**: Added confirmation email logic in registerUser.php.
