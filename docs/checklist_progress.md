@@ -13,7 +13,7 @@
       - All issues addressed and functionality implemented.
 
 ### Project Status
-- **Current Task:** Access Educational Resources is now complete.
+- **Current Task:** User Login is now in progress.
 
 ### Testing Insights
 - **User Registration Feature:**

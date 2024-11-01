@@ -1,9 +1,9 @@
 Milestone: Initial Setup
 Epic: User Account Management
-Feature: User Registration
-User Story: As a new user, I want to create an account so that I can save my searches.
+Feature: User Login
+User Story: As a registered user, I want to log in to my account so that I can access my saved searches.
 Acceptance Criteria:
-1. Users can enter their email and password to register.
-2. Users receive a confirmation email after registration.
-3. Users can log in with their credentials after registration.
+1. Users can log in using their email and password.
+2. Users receive an error message for incorrect credentials.
+3. Users are redirected to their dashboard upon successful login.
 Issues to Address: None
