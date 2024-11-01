@@ -13,7 +13,7 @@
       - All issues addressed and functionality implemented.
 
 ### Project Status
-- **Current Task:** User Login is now complete.
+- **Current Task:** User Registration is now in progress.
 
 ### Testing Insights
 - **User Registration Feature:**
@@ -21,9 +21,3 @@
   - **Issue 2:** Password strength requirements are not enforced.
   - **Issue 3:** No feedback provided to users if registration fails.
   - **Issue 4:** Confirmation email may not be sent if the email service is down.
-
-### Fixes Implemented for User Login Feature:
-- Added email format validation during login.
-- Enforced password strength requirements during login.
-- Provided user feedback for login failures.
-- Sanitized user input to prevent SQL injection.
