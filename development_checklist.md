@@ -43,11 +43,11 @@
       - All issues addressed and functionality implemented.
 
 - **Feature 2: FAQs Section**
-  - [ ] **User Story 1:** As a user, I want to read FAQs so that I can find quick answers to common questions.
+  - [x] **User Story 1:** As a user, I want to read FAQs so that I can find quick answers to common questions.
     - **Acceptance Criteria:**
-      - [ ] Users can access the FAQs section from the main menu.
-      - [ ] Users can search for specific questions within the FAQs.
-      - [ ] Users can submit a question if it is not answered in the FAQs.
+      - [x] Users can access the FAQs section from the main menu.
+      - [x] Users can search for specific questions within the FAQs.
+      - [x] Users can submit a question if it is not answered in the FAQs.
 
 ### Epic 4: Database Design
 - **Feature 1: Database Structure**
@@ -57,4 +57,4 @@
       - [x] ERD is created and documented.
 
 ### Project Status
-- **Current Task:** Access Educational Resources is now complete.
+- **Current Task:** FAQs Section is now complete.
