@@ -54,23 +54,5 @@
       - [x] Database schema is defined.
       - [x] ERD is created and documented.
 
-### Project Structure Documentation
-The following directory structure has been created:
-
-```
-/project-root
-├── /public
-│   ├── index.php                  # Main entry file for the app
-│   ├── app.js                     # JavaScript file for AJAX/real-time interactivity
-│   └── styles.css                 # CSS file for basic styling
-├── /src
-│   ├── database.php               # Database connection and helper functions
-│   ├── /api                       # Folder for API endpoint files
-│   │   └── getData.php            # API endpoint for retrieving data
-│   ├── /partials                  # Reusable PHP partials
-│   │   └── header.php             # Common header partial
-│   └── /utils                     # Utility PHP scripts
-│       └── websocket-server.php   # WebSocket server script (optional, if real-time is required)
-├── /config
-│   └── config.php                 # Configuration file for database settings
-└── README.md                      # Documentation for setup and usage
+### Project Status
+- **Current Task:** Access Educational Resources is now in progress.
