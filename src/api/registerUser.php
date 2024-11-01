@@ -1,4 +1,6 @@
 <?php
+require_once '../database.php';
+
 function validateEmail($email) {
     return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
@@ -16,24 +18,24 @@ function registerUser($email, $password) {
         return "Password must be at least 8 characters long and include at least one uppercase letter and one number.";
     }
 
-    // Simulate registration logic
-    $registrationSuccess = true; // Assume registration is successful
-
-    if ($registrationSuccess) {
-        // Simulate sending confirmation email
-        $emailSent = true; // Assume email is sent successfully
-        if (!$emailSent) {
-            return "Registration successful, but confirmation email could not be sent.";
-        }
-        return "Registration successful. A confirmation email has been sent.";
+    global $pdo; // Use the global PDO instance
+    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    
+    $stmt = $pdo->prepare("INSERT INTO grant_finders_site_002_users (email, password) VALUES (:email, :password)");
+    $stmt->bindParam(':email', $email);
+    $stmt->bindParam(':password', $hashedPassword);
+    
+    if ($stmt->execute()) {
+        return "User registered successfully.";
     } else {
         return "Registration failed. Please try again.";
     }
 }
 
-// Example usage
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
-    echo registerUser($email, $password);
+    $response = registerUser($email, $password);
+    echo json_encode(['message' => $response]);
 }
+?>
