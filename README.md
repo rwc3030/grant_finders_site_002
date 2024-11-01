@@ -51,8 +51,6 @@
 ---
 ### STARTER TEMPLATE
 ---
-Revise this template with your project details:
----
 # Product Development Plan
 ## Vision
 For **individuals and organizations seeking grant funding**  
