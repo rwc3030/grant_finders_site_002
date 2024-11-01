@@ -24,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (error) {
             console.error("Error fetching grants:", error);
             alert("An error occurred while fetching grants. Please try again later.");
+            logError("AJAX call failed: " + error.message);
         }
     }
 
@@ -39,6 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
             grantElement.className = "grant";
             grantElement.innerHTML = `<h3>${grant.title}</h3><p>${grant.description}</p>`;
             resultsContainer.appendChild(grantElement);
+        });
+    }
+
+    function logError(message) {
+        // Log error to the console and send to server
+        console.error(message);
+        fetch('/api/logError.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ error: message })
         });
     }
 });
