@@ -39,6 +39,10 @@
       - [ ] Users can navigate to the Resource Center from the main menu.
       - [ ] Users can view a list of available guides and resources.
       - [ ] Users can download or view resources in a readable format.
+    - **Pending Issues:**
+      - Ensure that the navigation to the Resource Center is intuitive and accessible from all main menu items.
+      - Verify that the list of available guides and resources is populated correctly and reflects the current database entries.
+      - Check that the download functionality works for all resource types and that the resources are in a readable format.
 
 - **Feature 2: FAQs Section**
   - [ ] **User Story 1:** As a user, I want to read FAQs so that I can find quick answers to common questions.
