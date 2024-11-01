@@ -49,7 +49,37 @@
 
 ### Epic 4: Database Design
 - **Feature 1: Database Structure**
-  - [ ] **User Story 1:** As a developer, I want to design the database structure to support user accounts, grants, and search results.
+  - **User Story 1: As a developer, I want to design the database structure to support user accounts, grants, and search results.**
     - **Acceptance Criteria:**
-      - [x] Database schema is defined.
-      - [ ] ERD is created and documented.
+      1. Database schema is defined.
+      2. ERD is created and documented.
+
+### Epic 5: Grant Resource Compilation
+- **Feature 1: Comprehensive Grant Listings**
+  - **User Story 1: As a user, I want to view a comprehensive list of grants so that I can find suitable funding opportunities.**
+    - **Acceptance Criteria:**
+      1. Users can view a categorized list of grants.
+      2. Users can filter grants by type, funding amount, and eligibility.
+      3. Users can access detailed information about each grant.
+
+- **Feature 2: Resource Center Navigation**
+  - **User Story 1: As a user, I want to easily navigate the Resource Center so that I can find the information I need quickly.**
+    - **Acceptance Criteria:**
+      1. Users can access the Resource Center from the main menu.
+      2. Users can see a clear layout of available resources.
+      3. Users can use a search function to find specific resources.
+
+### Epic 6: User Feedback and Support
+- **Feature 1: User Feedback Submission**
+  - **User Story 1: As a user, I want to submit feedback about the website so that I can help improve the service.**
+    - **Acceptance Criteria:**
+      1. Users can fill out a feedback form.
+      2. Users receive a confirmation message after submitting feedback.
+      3. Admins can view and respond to user feedback.
+
+- **Feature 2: Support Contact**
+  - **User Story 1: As a user, I want to contact support for assistance so that I can resolve any issues I encounter.**
+    - **Acceptance Criteria:**
+      1. Users can access a support contact form.
+      2. Users receive a response within a specified timeframe.
+      3. Users can view FAQs for common issues before contacting support.
