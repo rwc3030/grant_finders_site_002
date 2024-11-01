@@ -69,17 +69,17 @@
       2. Users can see a clear layout of available resources.
       3. Users can use a search function to find specific resources.
 
-### Epic 6: User Feedback and Support
-- **Feature 1: User Feedback Submission**
-  - **User Story 1: As a user, I want to submit feedback about the website so that I can help improve the service.**
+### Epic 6: User Feedback and Iteration
+- **Feature 1: Gather User Feedback**
+  - **User Story 1: As a product manager, I want to gather user feedback on the deployed application so that I can identify new features or improvements.**
     - **Acceptance Criteria:**
-      1. Users can fill out a feedback form.
-      2. Users receive a confirmation message after submitting feedback.
-      3. Admins can view and respond to user feedback.
+      1. Users can submit feedback through a form.
+      2. Feedback is collected and analyzed for actionable insights.
+      3. New features or improvements are documented based on user feedback.
 
-- **Feature 2: Support Contact**
-  - **User Story 1: As a user, I want to contact support for assistance so that I can resolve any issues I encounter.**
+- **Feature 2: Plan Next Development Cycle**
+  - **User Story 1: As a development team, we want to plan the next development cycle based on user feedback so that we can enhance the application.**
     - **Acceptance Criteria:**
-      1. Users can access a support contact form.
-      2. Users receive a response within a specified timeframe.
-      3. Users can view FAQs for common issues before contacting support.
+      1. New goals and tasks are defined based on feedback.
+      2. The development cycle is scheduled and communicated to the team.
+      3. Best practices are followed in the planning process.
