@@ -12,6 +12,15 @@
     - **Pending Issues:**
       - All issues addressed and functionality implemented.
 
+### Epic 4: Resource Center
+- **Feature 2: FAQs Section**
+  - [ ] **User Story 1:** As a user, I want to read FAQs so that I can find quick answers to common questions.
+    - **Acceptance Criteria:**
+      - [ ] Users can access the FAQs section from the main menu.
+      - [ ] Users can search for specific questions within the FAQs.
+      - [ ] Users can submit a question if it is not answered in the FAQs.
+    - **Pending Issues:**
+      - Task is now in progress.
+
 ### Project Status
-- **Current Task:** Access Educational Resources is now complete.
-- **Final Notes:** All issues in 'next_feature.txt' have been resolved, and the task has been marked as complete in the development checklist.
+- **Current Task:** FAQs Section is now in progress.
