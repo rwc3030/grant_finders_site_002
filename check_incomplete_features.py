@@ -1,7 +1,10 @@
-def check_incomplete_features(file_path):
+def read_file(file_path):
+    """Read the file and return its lines."""
     with open(file_path, 'r') as file:
-        lines = file.readlines()
+        return file.readlines()
 
+def parse_features(lines):
+    """Parse the lines to find incomplete features."""
     incomplete_features = []
     current_feature = None
 
@@ -22,6 +25,11 @@ def check_incomplete_features(file_path):
         incomplete_features.append(current_feature)
 
     return incomplete_features
+
+def check_incomplete_features(file_path):
+    """Check for incomplete features in the specified file."""
+    lines = read_file(file_path)
+    return parse_features(lines)
 
 if __name__ == "__main__":
     features = check_incomplete_features('development_checklist.md')
