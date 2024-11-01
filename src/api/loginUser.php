@@ -1,31 +1,41 @@
 <?php
-require_once '../database.php';
-
-function validateLogin($email, $password) {
-    global $pdo;
-
-    $stmt = $pdo->prepare("SELECT * FROM grant_finders_site_002_users WHERE email = :email");
-    $stmt->execute(['email' => $email]);
-    $user = $stmt->fetch();
-
-    if ($user && password_verify($password, $user['password'])) {
-        return $user;
-    }
-    return false;
+function validateEmail($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $data = json_decode(file_get_contents('php://input'), true);
-    $email = $data['email'];
-    $password = $data['password'];
+function isPasswordStrong($password) {
+    return strlen($password) >= 8 && preg_match('/[A-Z]/', $password) && preg_match('/[0-9]/', $password);
+}
 
-    $user = validateLogin($email, $password);
-    if ($user) {
-        // Start session and set user data
-        session_start();
-        $_SESSION['user_id'] = $user['user_id'];
-        echo json_encode(['success' => true, 'message' => 'Login successful.']);
+function loginUser($email, $password) {
+    if (!validateEmail($email)) {
+        return "Invalid email format.";
+    }
+
+    // Simulate password strength check
+    if (!isPasswordStrong($password)) {
+        return "Password must be at least 8 characters long and include at least one uppercase letter and one number.";
+    }
+
+    // Simulate database connection and user validation
+    $conn = new mysqli('localhost', 'root', 'snapper', 'grant_finders_site_002');
+
+    if ($conn->connect_error) {
+        return "Database connection failed: " . $conn->connect_error;
+    }
+
+    // Sanitize user input to prevent SQL injection
+    $email = $conn->real_escape_string($email);
+    $password = $conn->real_escape_string($password);
+
+    // Simulate user authentication
+    $query = "SELECT * FROM grant_finders_site_002_users WHERE email='$email' AND password='$password'";
+    $result = $conn->query($query);
+
+    if ($result->num_rows > 0) {
+        return "Login successful!";
     } else {
-        echo json_encode(['success' => false, 'message' => 'Invalid credentials.']);
+        return "Invalid email or password.";
     }
 }
+?>
