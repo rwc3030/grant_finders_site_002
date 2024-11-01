@@ -16,4 +16,3 @@ function anotherFunction() {
 
     // Continue with the rest of the function logic...
 }
-
