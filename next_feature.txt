@@ -6,8 +6,4 @@ Acceptance Criteria:
 1. Users can log in using their email and password.
 2. Users receive an error message for incorrect credentials.
 3. Users are redirected to their dashboard upon successful login.
-Issues to Address:
-1. No validation for email format during login.
-2. Password strength requirements are not enforced during login.
-3. No feedback provided to users if login fails due to server issues.
-4. Potential for SQL injection if user input is not properly sanitized.
+Issues to Address: None
