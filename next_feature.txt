@@ -1,11 +1,10 @@
 Milestone: Initial Setup
-Epic: Resource Center
-Feature: FAQs Section
-User Story: As a user, I want to read FAQs so that I can find quick answers to common questions.
+Epic: User Account Management
+Feature: User Registration
+User Story: As a new user, I want to create an account so that I can save my searches.
 Acceptance Criteria:
-1. Users can access the FAQs section from the main menu.
-2. Users can search for specific questions within the FAQs.
-3. Users can submit a question if it is not answered in the FAQs.
-
+1. Users can enter their email and password to register.
+2. Users receive a confirmation email after registration.
+3. Users can log in with their credentials after registration.
 Issues to Address:
 - None
