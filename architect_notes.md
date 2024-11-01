@@ -38,3 +38,7 @@
 6. **src/database.php**: 
    - Database connection errors are not handled, which can lead to application crashes.
 
+## Code Duplication and Cleanup Actions
+
+- Refactored email and password validation functions from `src/api/getData.php` and `src/api/getFAQs.php` into a new utility file `src/utils/validation.php` to eliminate redundancy.
+

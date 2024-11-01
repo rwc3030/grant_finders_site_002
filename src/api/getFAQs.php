@@ -1,20 +1,19 @@
 <?php
-header('Content-Type: application/json');
-include '../database.php';
+require_once '../utils/validation.php';
 
-function getFAQs($conn) {
-    $sql = "SELECT * FROM grant_finders_site_002_faqs";
-    $result = $conn->query($sql);
-    $faqs = [];
+function anotherFunction() {
+    // Example usage of validation functions
+    $email = "test@example.com";
+    $password = "Password1";
 
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            $faqs[] = $row;
-        }
+    if (!validateEmail($email)) {
+        return "Invalid email format.";
     }
-    return $faqs;
+
+    if (!validatePassword($password)) {
+        return "Password must be at least 8 characters long and include at least one uppercase letter and one number.";
+    }
+
+    // Continue with the rest of the function logic...
 }
 
-$faqs = getFAQs($conn);
-echo json_encode($faqs);
-?>
