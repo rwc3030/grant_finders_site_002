@@ -1,5 +1,5 @@
 function displayResources(resources) {
-    // Existing code to display resources
+    // Implementation for displaying resources
 }
 
 function displayFAQs(faqs) {
@@ -13,33 +13,24 @@ function displayFAQs(faqs) {
     });
 }
 
-function fetchResources() {
-    fetch('/api/getResources.php')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => displayResources(data))
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+function handleSearch() {
+    const searchInput = document.getElementById('search-input').value;
+    if (!searchInput) {
+        alert('Please enter a search term.');
+        return;
+    }
+    // Perform search logic here
+    // If no results found
+    alert('No results found for your search.');
 }
 
-function fetchFAQs() {
-    fetch('/api/getFAQs.php')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-            return response.json();
-        })
-        .then(data => displayFAQs(data))
-        .catch(error => {
-            console.error('There was a problem with the fetch operation:', error);
-        });
+function submitQuestion() {
+    const questionInput = document.getElementById('question-input').value;
+    if (!questionInput) {
+        alert('Please enter a question before submitting.');
+        return;
+    }
+    // Submit question logic here
 }
 
-// Call fetchFAQs to load FAQs on page load
-document.addEventListener('DOMContentLoaded', fetchFAQs);
+document.getElementById('submit-question-btn').addEventListener('click', submitQuestion);

@@ -8,8 +8,4 @@ Acceptance Criteria:
 3. Users can submit a question if it is not answered in the FAQs.
 
 Issues to Address:
-- Ensure that the FAQs section is easily accessible from the main menu.
-- Verify that the search functionality works correctly, including handling of edge cases such as no results found.
-- Implement a submission form for unanswered questions, ensuring validation for empty submissions.
-- Consider user experience for mobile devices when accessing the FAQs section.
-
+- None
