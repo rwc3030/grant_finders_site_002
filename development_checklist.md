@@ -9,6 +9,7 @@
       1. Users can enter their email and password to register.
       2. Users receive a confirmation email after registration.
       3. Users can log in with their credentials after registration.
+  - [x] **Task Completed**
 
 - **Feature 2: User Login**
   - **User Story 1: As a registered user, I want to log in to my account so that I can access my saved searches.**
