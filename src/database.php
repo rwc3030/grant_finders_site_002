@@ -34,4 +34,10 @@ function closeConnection() {
     global $pdo;
     $pdo = null; // Close the connection
 }
+
+function fetchAllGrants() {
+    global $pdo;
+    $sql = "SELECT * FROM grant_finders_site_002_grants";
+    return executeQuery($sql)->fetchAll();
+}
 ?>

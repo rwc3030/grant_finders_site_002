@@ -58,3 +58,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+a {
+    color: #5cb85c; /* Link color */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
