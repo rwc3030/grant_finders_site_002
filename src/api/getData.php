@@ -4,4 +4,5 @@ function getData($params) {
         return "Invalid request: ID is required.";
     }
     // Continue with data retrieval logic...
+    return "Data retrieved successfully for ID: " . $params['id'];
 }
