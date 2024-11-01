@@ -1,19 +1,12 @@
 <?php
-// Simple error handling page
-$error_message = isset($_GET['error']) ? htmlspecialchars($_GET['error']) : 'An unexpected error occurred. Please try again later.';
+function logError($error) {
+    $logFile = 'error_log.txt';
+    file_put_contents($logFile, date('Y-m-d H:i:s') . " - " . $error . PHP_EOL, FILE_APPEND);
+}
 
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Error</h1>
-    <p><?php echo $error_message; ?></p>
-    <a href="/">Go back to the homepage</a>
-</body>
-</html>
+try {
+    // Your code that may throw an exception
+} catch (Exception $e) {
+    logError($e->getMessage());
+    echo "An error occurred. Please try again later.";
+}

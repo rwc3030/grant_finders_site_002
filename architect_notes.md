@@ -38,6 +38,15 @@
 6. **src/database.php**: 
    - Database connection errors are not handled, which can lead to application crashes.
 
+## Bugs and Functional Issues
+
+1. **public/app.js**: Implement error handling for AJAX requests to inform users of failures.
+2. **public/error.php**: Add functionality to log errors to a file for better debugging.
+3. **public/index.php**: Implement input validation for user inputs to enhance security.
+4. **src/api/getData.php**: Add checks for empty or invalid parameters before processing requests.
+5. **src/api/loginUser.php**: Ensure passwords are hashed before storage to improve security.
+6. **src/database.php**: Implement error handling for database connection issues to prevent crashes.
+
 ## Code Duplication and Cleanup Actions
 
 - Refactored email and password validation functions from `src/api/getData.php` and `src/api/getFAQs.php` into a new utility file `src/utils/validation.php` to eliminate redundancy.
