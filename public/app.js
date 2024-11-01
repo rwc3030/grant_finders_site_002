@@ -1,50 +1,10 @@
-function displayResources(resources) {
-    // Implementation for displaying resources
-}
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-function displayFAQs(faqs) {
-    const faqContainer = document.getElementById('faq-container');
-    faqContainer.innerHTML = '';
-    faqs.forEach(faq => {
-        const faqElement = document.createElement('div');
-        faqElement.classList.add('faq');
-        faqElement.innerHTML = `<h3>${faq.question}</h3><p>${faq.answer}</p>`;
-        faqContainer.appendChild(faqElement);
-    });
-}
-
-function handleSearch() {
-    const searchInput = document.getElementById('search-input').value;
-    if (!searchInput) {
-        alert('Please enter a search term.');
-        return;
-    }
-    // Perform search logic here
-    // If no results found
-    alert('No results found for your search.');
-}
-
-function submitQuestion() {
-    const questionInput = document.getElementById('question-input').value;
-    if (!questionInput) {
-        alert('Please enter a question before submitting.');
-        return;
-    }
-    // Submit question logic here
-}
-
-function registerUser() {
     const emailInput = document.getElementById('email-input').value;
     const passwordInput = document.getElementById('password-input').value;
 
-    if (!emailInput || !passwordInput) {
-        alert('Please fill in all fields.');
-        return;
-    }
-
-    // Perform registration logic here
-    // Example: Send data to the server
-    fetch('/src/api/registerUser.php', {
+    fetch('api/loginUser.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -53,16 +13,12 @@ function registerUser() {
     })
     .then(response => response.json())
     .then(data => {
-        if (data.status === 'success') {
-            alert('Registration successful!');
+        if (data.success) {
+            alert(data.message);
+            window.location.href = 'dashboard.php'; // Redirect to dashboard
         } else {
             alert(data.message);
         }
     })
-    .catch(error => {
-        console.error('Error:', error);
-    });
-}
-
-document.getElementById('submit-question-btn').addEventListener('click', submitQuestion);
-document.getElementById('register-btn').addEventListener('click', registerUser);
+    .catch(error => console.error('Error:', error));
+});
