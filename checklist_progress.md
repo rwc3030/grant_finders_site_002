@@ -26,11 +26,11 @@
       - [x] Users can filter results by funding amount and eligibility.
 
 - **Feature 2: Save Search Results**
-  - [ ] **User Story 1:** As a user, I want to save my search results so that I can revisit them later.
+  - [x] **User Story 1:** As a user, I want to save my search results so that I can revisit them later.
     - **Acceptance Criteria:**
-      - [ ] Users can save search results to their account.
-      - [ ] Users can view saved searches on their dashboard.
-      - [ ] Users can delete saved searches if desired.
+      - [x] Users can save search results to their account.
+      - [x] Users can view saved searches on their dashboard.
+      - [x] Users can delete saved searches if desired.
 
 ### Epic 3: Resource Center
 - **Feature 1: Access Educational Resources**

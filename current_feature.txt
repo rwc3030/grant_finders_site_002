@@ -1,6 +1,6 @@
-Feature: Save Search Results
-User Story: As a user, I want to save my search results so that I can revisit them later.
+Feature: Access Educational Resources
+User Story: As a user, I want to access guides on how to apply for grants so that I can improve my application skills.
 Acceptance Criteria:
-1. Users can save search results to their account.
-2. Users can view saved searches on their dashboard.
-3. Users can delete saved searches if desired.
+1. Users can navigate to the Resource Center from the main menu.
+2. Users can view a list of available guides and resources.
+3. Users can download or view resources in a readable format.
