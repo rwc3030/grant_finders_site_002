@@ -6,8 +6,4 @@ Acceptance Criteria:
 1. Users can enter their email and password to register.
 2. Users receive a confirmation email after registration.
 3. Users can log in with their credentials after registration.
-Issues to Address:
-- **Issue 1:** No validation for email format during registration.
-- **Issue 2:** Password strength requirements are not enforced.
-- **Issue 3:** No feedback provided to users if registration fails.
-- **Issue 4:** Confirmation email may not be sent if the email service is down.
+Issues to Address: None

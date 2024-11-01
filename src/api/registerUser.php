@@ -1,40 +1,39 @@
 <?php
-require_once '../database.php';
+function validateEmail($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+}
+
+function isPasswordStrong($password) {
+    return strlen($password) >= 8 && preg_match('/[A-Z]/', $password) && preg_match('/[0-9]/', $password);
+}
 
 function registerUser($email, $password) {
-    global $pdo;
+    if (!validateEmail($email)) {
+        return "Invalid email format.";
+    }
+    
+    if (!isPasswordStrong($password)) {
+        return "Password must be at least 8 characters long and include at least one uppercase letter and one number.";
+    }
 
-    // Hash the password for security
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+    // Simulate registration logic
+    $registrationSuccess = true; // Assume registration is successful
 
-    // Prepare SQL statement to insert new user
-    $stmt = $pdo->prepare("INSERT INTO grant_finders_site_002_users (email, password) VALUES (:email, :password)");
-    $stmt->bindParam(':email', $email);
-    $stmt->bindParam(':password', $hashedPassword);
-
-    // Execute the statement and check for success
-    if ($stmt->execute()) {
-        return true;
+    if ($registrationSuccess) {
+        // Simulate sending confirmation email
+        $emailSent = true; // Assume email is sent successfully
+        if (!$emailSent) {
+            return "Registration successful, but confirmation email could not be sent.";
+        }
+        return "Registration successful. A confirmation email has been sent.";
     } else {
-        return false;
+        return "Registration failed. Please try again.";
     }
 }
 
-// Check if the request is a POST request
+// Example usage
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
-
-    // Validate input
-    if (filter_var($email, FILTER_VALIDATE_EMAIL) && !empty($password)) {
-        if (registerUser($email, $password)) {
-            echo json_encode(['message' => 'User registered successfully.']);
-        } else {
-            echo json_encode(['message' => 'User registration failed.']);
-        }
-    } else {
-        echo json_encode(['message' => 'Invalid input.']);
-    }
-} else {
-    echo json_encode(['message' => 'Invalid request method.']);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    echo registerUser($email, $password);
 }

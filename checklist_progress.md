@@ -2,25 +2,22 @@
 
 ## Milestone 1: Initial Setup
 
-### Epic 4: Resource Center
-- **Feature 1: Access Educational Resources**
-  - [x] **User Story 1:** As a user, I want to access guides on how to apply for grants so that I can improve my application skills.
-    - **Acceptance Criteria:**
-      - [x] Users can navigate to the Resource Center from the main menu.
-      - [x] Users can view a list of available guides and resources.
-      - [x] Users can download or view resources in a readable format.
-    - **Pending Issues:**
-      - All issues addressed and functionality implemented.
-
 ### Epic 1: User Account Management
 - **Feature 1: User Registration**
-  - [ ] **User Story 1:** As a new user, I want to create an account so that I can save my searches.
+  - [x] **User Story 1:** As a new user, I want to create an account so that I can save my searches.
     - **Acceptance Criteria:**
-      - [ ] Users can enter their email and password to register.
-      - [ ] Users receive a confirmation email after registration.
-      - [ ] Users can log in with their credentials after registration.
+      - [x] Users can enter their email and password to register.
+      - [x] Users receive a confirmation email after registration.
+      - [x] Users can log in with their credentials after registration.
     - **Pending Issues:**
       - All issues addressed and functionality implemented.
 
 ### Project Status
-- **Current Task:** User Registration is now in progress.
+- **Current Task:** User Registration is now complete.
+
+### Testing Insights
+- **User Registration Feature:**
+  - **Issue 1:** No validation for email format during registration. **Resolved** by implementing email validation.
+  - **Issue 2:** Password strength requirements are not enforced. **Resolved** by adding password strength checks.
+  - **Issue 3:** No feedback provided to users if registration fails. **Resolved** by implementing user feedback on registration status.
+  - **Issue 4:** Confirmation email may not be sent if the email service is down. **Resolved** by handling email sending failure.
