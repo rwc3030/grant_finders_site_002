@@ -21,6 +21,7 @@
       - [ ] Users can submit a question if it is not answered in the FAQs.
     - **Pending Issues:**
       - Task is now in progress.
+      - Issues identified during testing need to be addressed.
 
 ### Project Status
 - **Current Task:** FAQs Section is now in progress.
