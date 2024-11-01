@@ -14,3 +14,10 @@
 
 ### Project Status
 - **Current Task:** Access Educational Resources is now complete.
+
+### Testing Insights
+- **User Registration Feature:**
+  - **Issue 1:** No validation for email format during registration.
+  - **Issue 2:** Password strength requirements are not enforced.
+  - **Issue 3:** No feedback provided to users if registration fails.
+  - **Issue 4:** Confirmation email may not be sent if the email service is down.
