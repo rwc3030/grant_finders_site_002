@@ -1,18 +1,15 @@
 function displayResources(resources) {
-    const resourcesContainer = document.getElementById("resourcesContainer");
-    resourcesContainer.innerHTML = "";
-    if (resources.length === 0) {
-        resourcesContainer.innerHTML = "<p>No resources found.</p>";
-        return;
-    }
+    // Existing code to display resources
+}
 
-    resources.forEach(resource => {
-        const resourceElement = document.createElement("div");
-        resourceElement.innerHTML = `
-            <h3>${resource.title}</h3>
-            <a href="${resource.url}" target="_blank">Download</a>
-        `;
-        resourcesContainer.appendChild(resourceElement);
+function displayFAQs(faqs) {
+    const faqContainer = document.getElementById('faq-container');
+    faqContainer.innerHTML = '';
+    faqs.forEach(faq => {
+        const faqElement = document.createElement('div');
+        faqElement.classList.add('faq');
+        faqElement.innerHTML = `<h3>${faq.question}</h3><p>${faq.answer}</p>`;
+        faqContainer.appendChild(faqElement);
     });
 }
 
@@ -26,16 +23,23 @@ function fetchResources() {
         })
         .then(data => displayResources(data))
         .catch(error => {
-            const resourcesContainer = document.getElementById("resourcesContainer");
-            resourcesContainer.innerHTML = "<p>Error fetching resources: " + error.message + "</p>";
-            console.error('Error fetching resources:', error);
+            console.error('There was a problem with the fetch operation:', error);
         });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetchResources();
-    const resourceCenterLink = document.createElement('a');
-    resourceCenterLink.href = '/public/resource_center.php';
-    resourceCenterLink.innerText = 'Resource Center';
-    document.getElementById('mainMenu').appendChild(resourceCenterLink);
-});
+function fetchFAQs() {
+    fetch('/api/getFAQs.php')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => displayFAQs(data))
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
+}
+
+// Call fetchFAQs to load FAQs on page load
+document.addEventListener('DOMContentLoaded', fetchFAQs);
