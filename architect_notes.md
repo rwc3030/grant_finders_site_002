@@ -18,3 +18,23 @@
    - Status: Complete
    - Pending Issues: None
 
+## Identified Issues and Code Problems
+
+1. **public/app.js**: 
+   - No error handling for AJAX requests. If a request fails, the user is not informed.
+   
+2. **public/error.php**: 
+   - The error handling does not log errors to a file, which can make debugging difficult.
+   
+3. **public/index.php**: 
+   - Missing input validation for user inputs, which can lead to security vulnerabilities.
+   
+4. **src/api/getData.php**: 
+   - No checks for empty or invalid parameters before processing requests.
+   
+5. **src/api/loginUser.php**: 
+   - Passwords are not hashed before storage, which is a security risk.
+   
+6. **src/database.php**: 
+   - Database connection errors are not handled, which can lead to application crashes.
+
