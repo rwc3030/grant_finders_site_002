@@ -46,3 +46,10 @@
       1. Users can access the FAQs section from the main menu.
       2. Users can search for specific questions within the FAQs.
       3. Users can submit a question if it is not answered in the FAQs.
+
+### Epic 4: Database Design
+- **Feature 1: Database Structure**
+  - [ ] **User Story 1:** As a developer, I want to design the database structure to support user accounts, grants, and search results.
+    - **Acceptance Criteria:**
+      - [x] Database schema is defined.
+      - [ ] ERD is created and documented.
