@@ -113,3 +113,4 @@ Fill-in the following template to create a customized development checklist. Kee
 and so on...up to 3 epics per milestone
 ---
 Make sure to ALWAYS update the README.md file with your current project details.
+- **Implementation Notes:** The "Access Educational Resources" feature has been completed, and all issues have been resolved.

@@ -19,67 +19,42 @@
 
 ### Epic 2: Grant Search Functionality
 - **Feature 1: Search Grants**
-  - **User Story 1: As a user, I want to search for grants based on location so that I can find relevant opportunities.**
+  - [x] **User Story 1:** As a user, I want to search for grants based on location so that I can find relevant opportunities.
     - **Acceptance Criteria:**
-      1. Users can enter a location in the search bar.
-      2. The system displays a list of grants matching the location.
-      3. Users can filter results by funding amount and eligibility.
+      - [x] Users can enter a location in the search bar.
+      - [x] The system displays a list of grants matching the location.
+      - [x] Users can filter results by funding amount and eligibility.
 
 - **Feature 2: Save Search Results**
-  - **User Story 1: As a user, I want to save my search results so that I can revisit them later.**
+  - [x] **User Story 1:** As a user, I want to save my search results so that I can revisit them later.
     - **Acceptance Criteria:**
-      1. Users can save search results to their account.
-      2. Users can view saved searches on their dashboard.
-      3. Users can delete saved searches if desired.
+      - [x] Users can save search results to their account.
+      - [x] Users can view saved searches on their dashboard.
+      - [x] Users can delete saved searches if desired.
 
 ### Epic 3: Resource Center
 - **Feature 1: Access Educational Resources**
-  - **User Story 1: As a user, I want to access guides on how to apply for grants so that I can improve my application skills.**
+  - [x] **User Story 1:** As a user, I want to access guides on how to apply for grants so that I can improve my application skills.
     - **Acceptance Criteria:**
-      1. Users can navigate to the Resource Center from the main menu.
-      2. Users can view a list of available guides and resources.
-      3. Users can download or view resources in a readable format.
+      - [x] Users can navigate to the Resource Center from the main menu.
+      - [x] Users can view a list of available guides and resources.
+      - [x] Users can download or view resources in a readable format.
+    - **Pending Issues:**
+      - All issues addressed and functionality implemented.
 
 - **Feature 2: FAQs Section**
-  - **User Story 1: As a user, I want to read FAQs so that I can find quick answers to common questions.**
+  - [ ] **User Story 1:** As a user, I want to read FAQs so that I can find quick answers to common questions.
     - **Acceptance Criteria:**
-      1. Users can access the FAQs section from the main menu.
-      2. Users can search for specific questions within the FAQs.
-      3. Users can submit a question if it is not answered in the FAQs.
+      - [ ] Users can access the FAQs section from the main menu.
+      - [ ] Users can search for specific questions within the FAQs.
+      - [ ] Users can submit a question if it is not answered in the FAQs.
 
 ### Epic 4: Database Design
 - **Feature 1: Database Structure**
-  - **User Story 1: As a developer, I want to design the database structure to support user accounts, grants, and search results.**
+  - [x] **User Story 1:** As a developer, I want to design the database structure to support user accounts, grants, and search results.
     - **Acceptance Criteria:**
-      1. Database schema is defined.
-      2. ERD is created and documented.
+      - [x] Database schema is defined.
+      - [x] ERD is created and documented.
 
-### Epic 5: Grant Resource Compilation
-- **Feature 1: Comprehensive Grant Listings**
-  - **User Story 1: As a user, I want to view a comprehensive list of grants so that I can find suitable funding opportunities.**
-    - **Acceptance Criteria:**
-      1. Users can view a categorized list of grants.
-      2. Users can filter grants by type, funding amount, and eligibility.
-      3. Users can access detailed information about each grant.
-
-- **Feature 2: Resource Center Navigation**
-  - **User Story 1: As a user, I want to easily navigate the Resource Center so that I can find the information I need quickly.**
-    - **Acceptance Criteria:**
-      1. Users can access the Resource Center from the main menu.
-      2. Users can see a clear layout of available resources.
-      3. Users can use a search function to find specific resources.
-
-### Epic 6: User Feedback and Iteration
-- **Feature 1: Gather User Feedback**
-  - **User Story 1: As a product manager, I want to gather user feedback on the deployed application so that I can identify new features or improvements.**
-    - **Acceptance Criteria:**
-      1. Users can submit feedback through a form.
-      2. Feedback is collected and analyzed for actionable insights.
-      3. New features or improvements are documented based on user feedback.
-
-- **Feature 2: Plan Next Development Cycle**
-  - **User Story 1: As a development team, we want to plan the next development cycle based on user feedback so that we can enhance the application.**
-    - **Acceptance Criteria:**
-      1. New goals and tasks are defined based on feedback.
-      2. The development cycle is scheduled and communicated to the team.
-      3. Best practices are followed in the planning process.
+### Project Status
+- **Current Task:** Access Educational Resources is now complete.
