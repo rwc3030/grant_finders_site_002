@@ -1,14 +1,6 @@
 <?php
 require_once '../utils/validation.php';
 
-function validateEmail($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
-}
-
-function validatePassword($password) {
-    return preg_match('/^(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/', $password);
-}
-
 function registerUser($email, $password) {
     if (!validateEmail($email)) {
         return "Invalid email format.";
@@ -22,6 +14,7 @@ function registerUser($email, $password) {
     $registrationSuccess = true; // Assume registration is successful
 
     if ($registrationSuccess) {
+        // Simulate database insertion logic here
         // Send confirmation email logic here
         return "Registration successful. A confirmation email has been sent.";
     } else {
