@@ -58,3 +58,25 @@
   - The `src/partials` directory is missing the `header.php` file.
   - The `src/utils` directory is missing the `websocket-server.php` file.
 
+## Gaps to Feature Completeness
+
+1. **Feature: User Registration**
+   - **Status:** Complete
+   - **Missing Elements:** Confirmation email functionality is not implemented. This is necessary to verify user email addresses and enhance security.
+
+2. **Feature: User Login**
+   - **Status:** Complete
+   - **Missing Elements:** User session management is not fully implemented. This is required to maintain user login state across different pages.
+
+3. **Feature: Search Grants**
+   - **Status:** Complete
+   - **Missing Elements:** No pagination implemented for search results. This is needed to improve user experience when dealing with large datasets.
+
+4. **Feature: Save Search Results**
+   - **Status:** Complete
+   - **Missing Elements:** No user feedback mechanism after saving searches. Users should be informed that their searches have been saved successfully.
+
+5. **Feature: Access Educational Resources**
+   - **Status:** Complete
+   - **Missing Elements:** No tracking of user interactions with resources. This data could be useful for improving the resource offerings.
+
