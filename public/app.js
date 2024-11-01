@@ -33,4 +33,36 @@ function submitQuestion() {
     // Submit question logic here
 }
 
+function registerUser() {
+    const emailInput = document.getElementById('email-input').value;
+    const passwordInput = document.getElementById('password-input').value;
+
+    if (!emailInput || !passwordInput) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Perform registration logic here
+    // Example: Send data to the server
+    fetch('/src/api/registerUser.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email: emailInput, password: passwordInput })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.status === 'success') {
+            alert('Registration successful!');
+        } else {
+            alert(data.message);
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
 document.getElementById('submit-question-btn').addEventListener('click', submitQuestion);
+document.getElementById('register-btn').addEventListener('click', registerUser);
