@@ -1,6 +1,6 @@
-Feature: Search Grants
-User Story: As a user, I want to search for grants based on location so that I can find relevant opportunities.
+Feature: Save Search Results
+User Story: As a user, I want to save my search results so that I can revisit them later.
 Acceptance Criteria:
-1. Users can enter a location in the search bar.
-2. The system displays a list of grants matching the location.
-3. Users can filter results by funding amount and eligibility.
+1. Users can save search results to their account.
+2. Users can view saved searches on their dashboard.
+3. Users can delete saved searches if desired.

@@ -19,11 +19,11 @@
 
 ### Epic 2: Grant Search Functionality
 - **Feature 1: Search Grants**
-  - [ ] **User Story 1:** As a user, I want to search for grants based on location so that I can find relevant opportunities.
+  - [x] **User Story 1:** As a user, I want to search for grants based on location so that I can find relevant opportunities.
     - **Acceptance Criteria:**
-      - [ ] Users can enter a location in the search bar.
-      - [ ] The system displays a list of grants matching the location.
-      - [ ] Users can filter results by funding amount and eligibility.
+      - [x] Users can enter a location in the search bar.
+      - [x] The system displays a list of grants matching the location.
+      - [x] Users can filter results by funding amount and eligibility.
 
 - **Feature 2: Save Search Results**
   - [ ] **User Story 1:** As a user, I want to save my search results so that I can revisit them later.
