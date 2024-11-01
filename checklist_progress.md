@@ -12,15 +12,20 @@
     - **Pending Issues:**
       - All issues addressed and functionality implemented.
 
+### Epic 2: User Account Management
+- **Feature 1: User Login**
+  - [ ] **User Story 1:** As a registered user, I want to log in to my account so that I can access my saved searches.
+    - **Acceptance Criteria:**
+      1. Users can log in using their email and password.
+      2. Users receive an error message for incorrect credentials.
+      3. Users are redirected to their dashboard upon successful login.
+
 ### Project Status
 - **Current Task:** User Login is now in progress.
 
 ### Testing Insights
 - **User Registration Feature:**
-  - **Issue 1:** No validation for email format during registration. **Resolved**: Added email validation in registerUser.php.
-  - **Issue 2:** Password strength requirements are not enforced. **Resolved**: Implemented password strength validation in registerUser.php.
-  - **Issue 3:** No feedback provided to users if registration fails. **Resolved**: Added user feedback for registration success or failure in registerUser.php.
-  - **Issue 4:** Confirmation email may not be sent if the email service is down. **Resolved**: Added confirmation email logic in registerUser.php.
-
-### Final Notes
-- All issues in 'next_feature.txt' have been resolved, and the User Registration feature is now marked as complete.
+  - **Issue 1:** No validation for email format during registration.
+  - **Issue 2:** Password strength requirements are not enforced.
+  - **Issue 3:** No feedback provided to users if registration fails.
+  - **Issue 4:** Confirmation email may not be sent if the email service is down.
