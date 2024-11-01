@@ -51,3 +51,10 @@
 
 - Refactored email and password validation functions from `src/api/getData.php` and `src/api/getFAQs.php` into a new utility file `src/utils/validation.php` to eliminate redundancy.
 
+## File and Directory Structure Adjustments
+
+- The current directory structure does not fully align with the specified structure in 'README.md':
+  - The `src/api` directory contains `getData.php`, but it should also include `getFAQs.php`, `registerUser.php`, and `loginUser.php` as per the expected structure.
+  - The `src/partials` directory is missing the `header.php` file.
+  - The `src/utils` directory is missing the `websocket-server.php` file.
+
