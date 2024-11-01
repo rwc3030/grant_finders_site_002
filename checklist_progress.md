@@ -8,14 +8,14 @@
     - **Acceptance Criteria:**
       - [x] Users can enter their email and password to register.
       - [x] Users receive a confirmation email after registration.
-      - [ ] Users can log in with their credentials after registration.
+      - [x] Users can log in with their credentials after registration.
 
 - **Feature 2: User Login**
   - [x] **User Story 1:** As a registered user, I want to log in to my account so that I can access my saved searches.
     - **Acceptance Criteria:**
       - [x] Users can log in using their email and password.
-      - [ ] Users receive an error message for incorrect credentials.
-      - [ ] Users are redirected to their dashboard upon successful login.
+      - [x] Users receive an error message for incorrect credentials.
+      - [x] Users are redirected to their dashboard upon successful login.
 
 ### Epic 2: Grant Search Functionality
 - **Feature 1: Search Grants**
@@ -49,7 +49,28 @@
 
 ### Epic 4: Database Design
 - **Feature 1: Database Structure**
-  - [ ] **User Story 1:** As a developer, I want to design the database structure to support user accounts, grants, and search results.
+  - [x] **User Story 1:** As a developer, I want to design the database structure to support user accounts, grants, and search results.
     - **Acceptance Criteria:**
       - [x] Database schema is defined.
-      - [ ] ERD is created and documented.
+      - [x] ERD is created and documented.
+
+### Project Structure Documentation
+The following directory structure has been created:
+
+```
+/project-root
+├── /public
+│   ├── index.php                  # Main entry file for the app
+│   ├── app.js                     # JavaScript file for AJAX/real-time interactivity
+│   └── styles.css                 # CSS file for basic styling
+├── /src
+│   ├── database.php               # Database connection and helper functions
+│   ├── /api                       # Folder for API endpoint files
+│   │   └── getData.php            # API endpoint for retrieving data
+│   ├── /partials                  # Reusable PHP partials
+│   │   └── header.php             # Common header partial
+│   └── /utils                     # Utility PHP scripts
+│       └── websocket-server.php   # WebSocket server script (optional, if real-time is required)
+├── /config
+│   └── config.php                 # Configuration file for database settings
+└── README.md                      # Documentation for setup and usage
