@@ -49,6 +49,19 @@
 - **Username:** `root`
 - **Password:** `snapper`
 ---
+### Deployment Instructions
+1. **Prepare the application for deployment:**
+   - Ensure all configurations are properly set for the production environment.
+   - Verify that the `.env` file contains production credentials and settings.
+   - Double-check that sensitive files (like `.env`) are not exposed publicly.
+
+2. **Deploy the application to the production LAMP server.**
+
+3. **Test the application in the production environment:**
+   - Ensure all features are working as expected.
+
+4. **Update this README.md file with any deployment instructions or considerations.**
+---
 ### STARTER TEMPLATE
 ---
 # Product Development Plan
