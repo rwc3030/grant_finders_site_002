@@ -39,16 +39,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     
     // Example SQL query (make sure to use prepared statements in real implementation)
     $sql = "SELECT * FROM grant_finders_site_002_grants WHERE title LIKE ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute(['%' . $sanitizedQuery . '%']);
-    $grants = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    try {
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute(['%' . $sanitizedQuery . '%']);
+        $grants = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    // Return the response
-    echo json_encode([
-        'status' => 'success',
-        'message' => 'Data fetched successfully.',
-        'data' => $grants
-    ]);
+        // Return the response
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Data fetched successfully.',
+            'data' => $grants
+        ]);
+    } catch (PDOException $e) {
+        echo json_encode([
+            'status' => 'error',
+            'message' => 'Database query error: ' . $e->getMessage(),
+            'data' => null
+        ]);
+    }
 } else {
     echo json_encode([
         'status' => 'error',

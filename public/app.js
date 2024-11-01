@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        fetchGrants(query);
+        fetchGrants({ query });
     });
 
-    async function fetchGrants(query) {
+    async function fetchGrants({ query }) {
         try {
             const response = await fetch(`/api/getData.php?query=${encodeURIComponent(query)}`);
             if (!response.ok) {

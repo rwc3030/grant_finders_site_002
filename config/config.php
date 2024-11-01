@@ -2,7 +2,12 @@
 // Load environment variables
 require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->load();
+try {
+    $dotenv->load();
+} catch (Exception $e) {
+    error_log("Error loading environment variables: " . $e->getMessage(), 3, __DIR__ . '/../logs/error.log');
+    die("Error loading configuration. Please check the logs.");
+}
 
 // Define constants for database connection
 define('DB_HOST', $_ENV['DB_HOST']);
