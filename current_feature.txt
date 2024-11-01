@@ -4,3 +4,4 @@ Acceptance Criteria:
 1. Users can navigate to the Resource Center from the main menu.
 2. Users can view a list of available guides and resources.
 3. Users can download or view resources in a readable format.
+Issues to Address: None
