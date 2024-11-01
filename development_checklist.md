@@ -57,4 +57,4 @@
       - [x] ERD is created and documented.
 
 ### Project Status
-- **Current Task:** User Registration is now in progress.
+- **Current Task:** User Registration is now complete.

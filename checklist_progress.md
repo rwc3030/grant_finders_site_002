@@ -2,22 +2,16 @@
 
 ## Milestone 1: Initial Setup
 
-### Epic 1: User Account Management
-- **Feature 1: User Registration**
-  - [x] **User Story 1:** As a new user, I want to create an account so that I can save my searches.
+### Epic 3: Resource Center
+- **Feature 1: Access Educational Resources**
+  - [x] **User Story 1:** As a user, I want to access guides on how to apply for grants so that I can improve my application skills.
     - **Acceptance Criteria:**
-      - [x] Users can enter their email and password to register.
-      - [x] Users receive a confirmation email after registration.
-      - [x] Users can log in with their credentials after registration.
+      - [x] Users can navigate to the Resource Center from the main menu.
+      - [x] Users can view a list of available guides and resources.
+      - [x] Users can download or view resources in a readable format.
     - **Pending Issues:**
       - All issues addressed and functionality implemented.
 
 ### Project Status
 - **Current Task:** User Registration is now complete.
-
-### Testing Insights
-- **User Registration Feature:**
-  - **Issue 1:** No validation for email format during registration. **Resolved** by implementing email validation.
-  - **Issue 2:** Password strength requirements are not enforced. **Resolved** by adding password strength checks.
-  - **Issue 3:** No feedback provided to users if registration fails. **Resolved** by implementing user feedback on registration status.
-  - **Issue 4:** Confirmation email may not be sent if the email service is down. **Resolved** by handling email sending failure.
+- **Final Notes:** The User Registration feature has been successfully implemented, and all issues in 'next_feature.txt' have been resolved.
