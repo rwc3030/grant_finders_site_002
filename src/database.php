@@ -29,4 +29,9 @@ function executeQuery($sql, $params = []) {
     }
     return $stmt;
 }
+
+function closeConnection() {
+    global $pdo;
+    $pdo = null; // Close the connection
+}
 ?>

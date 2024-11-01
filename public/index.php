@@ -14,6 +14,9 @@
         <button id="searchButton">Search</button>
         <div id="resultsContainer"></div>
     </div>
+    <footer>
+        <p>&copy; 2023 Ultimate Grant Resource Website. All rights reserved.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
