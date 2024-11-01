@@ -6,6 +6,7 @@ function logError($error) {
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['error'])) {
     logError($_POST['error']);
+    echo "An error occurred. Please try again later.";
 }
 
 try {

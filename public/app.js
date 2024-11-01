@@ -5,6 +5,7 @@ function makeAjaxRequest(url, data) {
         data: data,
         success: function(response) {
             // Handle success
+            console.log("Request successful:", response);
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert("An error occurred: " + textStatus);
