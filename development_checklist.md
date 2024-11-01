@@ -16,6 +16,7 @@
       1. Users can log in using their email and password.
       2. Users receive an error message for incorrect credentials.
       3. Users are redirected to their dashboard upon successful login.
+  - [x] **Task Completed**
 
 ### Epic 2: Grant Search Functionality
 - **Feature 1: Search Grants**
