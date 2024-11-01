@@ -5,4 +5,5 @@ function validateInput($input) {
 
 $email = validateInput($_POST['email']);
 $password = validateInput($_POST['password']);
+
 // Continue with login logic...
